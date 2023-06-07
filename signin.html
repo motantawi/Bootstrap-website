@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicons/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script defer src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./icons/bootstrap/bootstrap-icons.css" />
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="./images/logo1.png" alt="main_logo" class="one" />
+        <div>
+          <p class="two">Tamkeen Soft</p>
+          <p class="three">تمكين سوفت</p>
+        </div>
+      </a>
+    </header>
+    <section class="login container">
+      <div
+        class="d-flex justify-content-between align-items-center flex-wrap-reverse"
+      >
+        <div class="m-auto mt-5" style="width: 400px">
+          <div class="h4 text-center mb-3">دخول العملاء المشتركين</div>
+          <div style="height: 65px">
+            <div
+              class="p-3 text-danger bg-danger bg-opacity-25 mb-3"
+              style="display: none"
+              id="userNumber"
+            >
+              تأكد من رقم الفرع
+            </div>
+            <div
+              class="p-3 text-danger bg-danger bg-opacity-25 mb-3"
+              id="phoneNumber"
+              style="display: none"
+            >
+              تأكد من رقم الجوال
+            </div>
+          </div>
+          <form id="singinform">
+            <div class="mb-3">
+              <input
+                id="one"
+                placeholder="رقم الفرع"
+                type="number"
+                class="form-control rounded-0 pb-3 pt-3"
+                aria-describedby="رقم الفرع"
+                required
+                style="background-color: rgba(63, 203, 238, 0.082)"
+              />
+              <div
+                class="d-flex justify-content-end"
+                style="font-size: 13px; height: 15px"
+              >
+                <a
+                  href=""
+                  class="text-black fw-bold mt-1"
+                  id="forgot-link"
+                  style="display: none"
+                  >نسيت رقم الفرع المسجل بجوالي</a
+                >
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                id="two"
+                placeholder="رقم الجوال"
+                type="number"
+                class="form-control rounded-0 pb-3 pt-3 mb-5"
+                aria-describedby="رقم الجوال"
+                required
+                style="background-color: rgba(63, 203, 238, 0.082)"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary w-100 rounded-0 pb-3 pt-3 fs-6 fw-bold"
+            >
+              دخول
+            </button>
+          </form>
+          <div class="text-center">
+            <div class="text-center mt-3 fw-bold" style="font-size: 13px">
+              تسجيل مشترك جديد من هنا
+            </div>
+            <a href="" class="mt-3 fw-bold text-primary d-inline-block fs-5"
+              >تسجيل مشترك جديد</a
+            >
+          </div>
+        </div>
+        <div class="login-img m-auto">
+          <img src="./images/loginimg.png" alt="" class="w-100" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const form = document.getElementsByTagName("form")[0];
+    form.onsubmit = function (e) {
+      e.preventDefault();
+      one.value = "";
+      two.value = "";
+    };
+  </script>
+</html>

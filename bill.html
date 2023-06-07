@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicons/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script defer src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./icons/bootstrap/bootstrap-icons.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Bill</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="./images/logo1.png" alt="main_logo" class="one" />
+        <div>
+          <p class="two">Tamkeen Soft</p>
+          <p class="three">تمكين سوفت</p>
+        </div>
+      </a>
+    </header>
+
+    <section class="bill-section d-flex align-items-center p-5">
+      <div class="registered text-center w-50">
+        <div class="correct-icon mb-0">
+          <i
+            class="bi bi-check-lg text-success fw-bold"
+            style="font-size: 100px"
+          ></i>
+        </div>
+        <h3 class="fw-bold text-primary mb-5">تم الاشتراك بنجاح</h3>
+        <button
+          class="btn btn-primary mt-3 p-4 fs-6 rounded-0 pe-5 ps-5 fw-bold"
+        >
+          <a href="./signin.html" class="text-white">
+            دخول العملاء المشتركيين</a
+          >
+        </button>
+      </div>
+      <div
+        class="border-secondary bill-border"
+        style="border-right: 0.1px solid; height: 350px; opacity: 0.3"
+      ></div>
+      <div
+        class="card-bill-container d-flex justify-content-center"
+        style="width: 48%"
+      >
+        <div
+          class="card m-auto"
+          style="border-radius: 10px; width: 350px; background-color: #c0dded"
+        >
+          <div class="card-header fs-6 fw-bold text-center pt-3 pb-3">
+            الفاتورة
+          </div>
+          <div class="card-body bg-white p-4">
+            <div class="d-flex justify-content-between mb-0">
+              <h6 class="fw-bold">اسم العميل</h6>
+              <p class="text-secondary">محمد سامي</p>
+            </div>
+
+            <div class="d-flex justify-content-between mb-0">
+              <h6 class="fw-bold">رقم الفاتورة</h6>
+              <p class="text-secondary">223434</p>
+            </div>
+            <div class="d-flex justify-content-between mb-0">
+              <h6 class="fw-bold">تاريخ الاشتراك</h6>
+              <p class="text-secondary" dir="ltr">30 June 2023</p>
+            </div>
+            <div class="d-flex justify-content-between mb-0">
+              <h6 class="fw-bold">قيمة مضافة 15</h6>
+              <p class="text-secondary">%15</p>
+            </div>
+            <div class="d-flex justify-content-between mb-0">
+              <h6 class="fw-bold">سعر الاشتراك</h6>
+              <p class="text-secondary">40 ر.س</p>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-0">
+              <h6 class="fw-bold">طريقة الدفع</h6>
+              <img src="./icons/visa.png" style="width: 45px" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <button class="btn btn-outline-primary rounded-0 pe-5 ps-5">
+                طباعة الفاتورة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
