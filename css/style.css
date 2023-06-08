@@ -59,6 +59,11 @@ input::-webkit-inner-spin-button {
 .custom-shape-divider-bottom-1685724008 .shape-fill {
   fill: #ffffff;
 }
+@media (max-width: 650px) {
+  .custom-shape-divider-bottom-1685724008 svg {
+    height: 90px;
+  }
+}
 
 header {
   color: #000;
